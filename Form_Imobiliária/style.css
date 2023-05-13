@@ -1,0 +1,120 @@
+body {
+  background-color: #fbf8f8;
+  max-width: 1200px;
+  padding: 40px 80px;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0px;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+}
+.form-bg {
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  font: 600 2.5rem/1.2 "Roboto";
+  text-align: center;
+}
+
+h2 {
+  font: 600 1.5rem/1.2 "Roboto";
+  margin-top: 50px;
+}
+
+h3 {
+  font: 400 1.1rem/1.5 "Poppins";
+}
+
+p {
+  font: 500 1rem/1 "Poppins";
+  color: #7b7b7b;
+  text-align: center;
+}
+
+fieldset {
+  background-color: #ffffff;
+  font: 400 1.05rem/1.5 "Poppins";
+  padding: 20px 40px;
+}
+
+input,
+#elevador,
+#ocupacao {
+  font: 400 1rem/1.5 "Poppins";
+}
+
+.radio {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.texto {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.texto-secundario {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.select {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mensagem {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+textarea:focus {
+  background-color: #dadfef;
+}
+
+.botao {
+  display: grid;
+  justify-content: center;
+}
+
+#botao-2 {
+  padding: 10px 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  font: 400 1.2rem/1 "Roboto";
+  cursor: pointer;
+}
+
+#botao-2:hover {
+  background-color: #dadfef;
+  color: #3957bd;
+  border-radius: 4px;
+}
+
+.back {
+  display: grid;
+  justify-content: end;
+  font: 400 1.2rem/1 "Roboto";
+}

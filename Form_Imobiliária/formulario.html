@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <span id="topo"></span>
+  <title>Formulario | Quinto Andar</title>
+
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <img src="./img/logo.svg" alt="logo da quinto andar">
+    <div class="header">
+      <h1> Avaliação Imobiliária </h1>
+      <p class="descricao"> Por favor, preencha as informações abaixo a respeito do imóvel que será vendido/locado.
+      </p>
+    </div>
+  </header>
+  <div class="form-bg">
+    <form>
+      <h2> Dados do Imóvel </h2>
+      <fieldset>
+        <div class=radio>
+          <label for="negocio"><strong> Negócio: </strong></label><br>
+          <input type="radio" name="negocio" value="venda"> Venda
+          <input type="radio" name="negocio" value="Locacao"> Locação
+        </div>
+
+        <div class="radio">
+          <label for="tipo-imovel"><strong> Tipo de Imóvel </strong></label><br>
+          <input type="radio" name="tipo-negocio" value="apartamento"> Apartamento
+          <input type="radio" name="tipo-negocio" value="casa"> Casa
+          <input type="radio" name="tipo-negocio" value="flat"> Flat
+          <input type="radio" name="tipo-negocio" value="sala"> Sala comercial
+          <input type="radio" name="tipo-negocio" value="loja"> Loja
+          <input type="radio" name="tipo-negocio" value="kitnet"> Kitnet
+        </div>
+
+        <div class="texto">
+          <label for="captador"><strong> Captador </strong></label>
+          <input type="text" name="captador" value=""> <br>
+          <label for="valor-imovel"><strong> Valor do Imóvel </strong></label>
+          <input type="text" name="valor" value="R$00,00">
+        </div>
+
+        <h3><strong> Localização do Imóvel </strong></h3>
+
+        <div class="texto-secundario">
+          <label for="endereco"><strong> Logradouro </strong></label>
+          <input type="text" name="endereco" value="Rua/Avenida">
+          <label for="numero"><strong> Número </strong></label>
+          <input type="number" name="numero" value="apenas número">
+          <label for="complemento"><strong> Complemento </strong></label>
+          <input type="text" name="complemento" value="bloco/apto">
+          <label for="cep"><strong> CEP </strong></label>
+          <input type="text" name="cep" value="00000-000">
+        </div>
+      </fieldset>
+
+      <h2> Situação Financeira </h2>
+      <fieldset>
+        <div class="texto-secundario">
+          <label for="condominio"><strong> Valor do Condomínio</strong></label>
+          <input type="text" name="condominio" value="R$">
+          <label for="iptu"><strong> IPTU</strong></label>
+          <input type="text" name="iptu" value="R$">
+          <label for="venda"><strong> Vendendo há quanto tempo?</strong></label>
+          <input type="text" name="iptu" value="Ex: 6 meses">
+        </div>
+
+        <div class="radio">
+          <label for="financeira"><strong> Situação Financeira</strong></label>
+          <input type="radio" name="financeira" value=""> Quitado
+          <input type="radio" name="financeira" value=""> Financiado
+        </div>
+
+        <div class="texto-secundario">
+          <label for="saldo"><strong> Banco/Saldo Devedor</strong></label>
+          <input type="text" name="saldo" value="">
+        </div>
+      </fieldset>
+
+      <h2> Descricão do Imóvel </h2>
+      <fieldset>
+        <div class="texto-secundario">
+          <label for="quarto"><strong> Quarto</strong></label>
+          <input type="number" name="quarto" value="">
+          <label for="suites"><strong> Suítes</strong></label>
+          <input type="number" name="suites" value="">
+          <label for="banheiros"><strong> Banheiros</strong></label>
+          <input type="number" name="banheiros" value="">
+          <label for="vagas"><strong> Vagas</strong></label>
+          <input type="number" name="vagas" value="">
+          <label for="num-vaga"><strong>Localização / Cobertura / nº vaga</strong></label>
+          <input type="text" name="num-vaga" value="">
+        </div>
+
+        <div class="select">
+          <label for="elevador"><strong>Elevador</strong></label>
+          <select id="elevador">
+            <option selected disabled value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+
+        <div class="checkbox">
+          <h3><strong>Interior do Imóvel</strong></h3><br>
+
+          <label for="ar-condicionado"> Ar condicionado</label>
+          <input type="checkbox" id="ar-condicionado" name="ar-condicionado" value="ar-condicionado">
+          <label for="varanda">Varanda</label>
+          <input type="checkbox" id="varanda" name="varanda" value="varanda">
+          <label for="saida-servico">Saída de Serviço</label>
+          <input type="checkbox" id="saida-servico" name="saida-servico" value="saida-servico">
+          <label for="gas">Gás Canalizado</label>
+          <input type="checkbox" id="gas" name="gas" value="gas">
+          <label for="Lavabo">Lavabo</label>
+          <input type="checkbox" id="Lavabo" name="Lavabo" value="Lavabo">
+          <label for="armario">Armário planejados</label>
+          <input type="checkbox" id="armario" name="armario" value="armario">
+        </div>
+
+        <div class="checkbox">
+          <h3><strong>Área de Lazer</strong></h3><br>
+
+          <label for="piscina"> Piscina</label>
+          <input type="checkbox" id="piscina" name="piscina" value="piscina">
+          <label for="academia"> Academia</label>
+          <input type="checkbox" id="academia" name="academia" value="academia">
+          <label for="churrasqueira"> Churrasqueira</label>
+          <input type="checkbox" id="churrasqueira" name="churrasqueira" value="churrasqueira">
+          <label for="festa"> Salão de Festa</label>
+          <input type="checkbox" id="festa" name="festa" value="festa">
+          <label for="playground"> Playground</label>
+          <input type="checkbox" id="playground" name="playground" value="playground">
+          <label for="gourmet">Espaço Gourmet</label>
+          <input type="checkbox" id="gourmet" name="gourmet" value="gourmet">
+        </div>
+
+        <div class="checkbox">
+          <h3><strong>Segurança</strong></h3><br>
+
+          <label for="camera"> Câmera</label>
+          <input type="checkbox" id="camera" name="camera" value="camera">
+          <label for="portaria"> Portaria 24h</label>
+          <input type="checkbox" id="portaria" name="portaria" value="portaria">
+          <label for="interfone"> Interfone</label>
+          <input type="checkbox" id="interfone" name="interfone" value="interfone">
+          <label for="piscina"> Piscina</label>
+          <input type="checkbox" id="piscina" name="piscina" value="piscina">
+          <label for="fechado"> Condomínio Fechado</label>
+          <input type="checkbox" id="fechado" name="fechado" value="fechado">
+          <label for="Alarme"> Alarme</label>
+          <input type="checkbox" id="Alarme" name="Alarme" value="Alarme">
+        </div>
+
+        <div class="mensagem">
+          <label><strong>Detalhes Adicionais:</strong></label><br><br>
+          <textarea rows="5" style="width: 26em" name="adicionais"></textarea>
+        </div>
+
+        <div class="mensagem">
+          <label><strong>Motivo da Venda</strong></label><br><br>
+          <textarea rows="5" style="width: 26em" name="adicionais"></textarea>
+        </div>
+
+        <div class="select">
+          <label><strong>Situação do Imóvel</strong></label>
+          <select id="ocupacao">
+            <option>Desocupado</option>
+            <option>Ocupado Inquilino</option>
+            <option>Ocupado Proprietário</option>
+          </select>
+        </div>
+        <div class="texto-secundario">
+          <label for="valor-aluguel"><strong> Valor do Aluguel</strong></label>
+          <input type="text" id="valor-aluguel" name="valor-aluguel" value="R$">
+          <label for="chave"><strong> Chaves</strong></label>
+          <input type="text" id="chave" name="chave" value="Ex: Portaria">
+        </div>
+      </fieldset>
+
+      <h2> Dados de Contato </h2>
+      <fieldset>
+        <div class="texto-secundario">
+          <label for="nome"><strong> Nome Proprietário</strong></label>
+        </div>
+        <div class="texto-secundario">
+          <input type="text" id="nome" name="nome" value="Nome">
+          <input type="text" id="nome" name="nome" value="Sobrenome">
+        </div>
+
+        <div class="texto-secundario">
+          <label for="tel"><strong> Celular</strong></label>
+          <input type="tel" id="tel" name="tel" value="+55(00) 00000-0000">
+          <label for="email"><strong> E-mail</strong></label>
+          <input type="email" id="email" name="email" value=contato@aa.com.br>
+        </div>
+      </fieldset>
+      <div class="botao">
+        <button id="botao-2" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <a class="back" href="#topo"> Voltar ao topo</a>
+
+</body>
+
+</html>
