@@ -113,8 +113,11 @@ textarea:focus {
   border-radius: 4px;
 }
 
-.back {
-  display: grid;
-  justify-content: end;
-  font: 400 1.2rem/1 "Roboto";
+#back-to-top {
+  font: 400 1rem/1 "Roboto";
+  text-decoration: underline;
+  border: none;
+  background: none;
+  padding: 10px 30px;
+  cursor: pointer;
 }
